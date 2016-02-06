@@ -12,3 +12,4 @@ TODO
 * add option for Nagios-compatible output
 * create list of supported statuses and enforce their use by plugins
     * right now check status is a free-for-all
+* make spec test code more DRY
