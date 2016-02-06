@@ -30,7 +30,7 @@ Sample output
 -------------
 
 ```
-% bin/hdfshealth --namenode http://104.197.89.161:50070/jmx
+% bin/hdfshealth --namenode http://10.1.1.10:50070/jmx
 [ 2016-02-06 18:24:30 UTC ] CheckLastCheckpointTime status: CRITICAL last checkpoint is at least 42 hours old
 [ 2016-02-06 18:24:30 UTC ] CheckMissingBlocks status: OK  no reported missing blocks
 [ 2016-02-06 18:24:30 UTC ] CheckSafeMode status: OK  NN not in safe mode
