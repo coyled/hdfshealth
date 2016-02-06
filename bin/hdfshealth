@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(File.dirname(__FILE__), '../lib')
+
+require 'choice'
+require 'hdfshealth'
+
+Choice.options do
+    option :namenode, :required => true do
+        long '--namenode=HOST:PORT'
+        desc 'Namenode to check'
+    end
+
+    option :version do
+        long '--version'
+        desc 'Show version'
+        action do
+            puts HDFSHealth::VERSION
+            exit
+        end
+    end
+end
+
+cli = HDFSHealth::CLI.new(Choice.choices)
+cli.run
