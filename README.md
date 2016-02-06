@@ -48,6 +48,16 @@ Requirements
   * tested with Cloudera's CDH5.5.1
 
 
+Testing
+-------
+
+From the repo's top-level directory:
+
+```
+    $ rspec
+```
+
+
 Adding a plugin
 ---------------
 
