@@ -60,7 +60,7 @@ From the repo's top-level directory:
 Sample output:
 
 ```
-    $rspec
+    $ rspec
 
     CheckMissingBlocks
       Verifies there are no missing blocks
