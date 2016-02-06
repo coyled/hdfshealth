@@ -15,6 +15,27 @@ Overview
 assorted HDFS health checks.
 
 
+Usage
+-----
+
+```
+    $ git clone https://github.com/coyled/hdfshealth
+    $ cd hdfshealth
+    $ bundle install
+    $ bin/hdfshealth --namenode http://<namenode_host>:50070/jmx
+```
+
+
+Requirements
+------------
+
+* Ruby 2.2.2
+  * may work with other versions but this was the only one tested
+* the Bundler gem (`gem install bundler`)
+* Hadoop
+  * tested with Cloudera's CDH5.5.1
+
+
 Adding a plugin
 ---------------
 
@@ -30,27 +51,6 @@ See the existing plugins in [`lib/hdfshealth/plugins/`](lib/hdfshealth/plugins)
 If you wanted to add another source, e.g. datanode JMX output, you
 could create something along the lines of the `load_nn_jmx.rb` plugin
 and require it where needed.
-
-
-Requirements
-------------
-
-* Ruby 2.2.2
-  * may work with other versions but this was the only one tested
-* the Bundler gem (`gem install bundler`)
-* Hadoop
-  * tested with Cloudera's CDH5.5.1
-
-
-Usage
------
-
-```
-    $ git clone https://github.com/coyled/hdfshealth
-    $ cd hdfshealth
-    $ bundle install
-    $ bin/hdfshealth --namenode http://<namenode_host>:50070/jmx
-```
 
 
 Improvements
