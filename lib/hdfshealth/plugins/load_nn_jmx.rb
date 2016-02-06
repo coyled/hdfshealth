@@ -18,11 +18,31 @@ class LoadNNJMX < HDFSHealth::Plugin
     end
 
     def self.fetch_jmx(namenode)
-        uri = URI(namenode)
+        uri = URI.parse(namenode)
         if uri.scheme == 'file'
-            jmx = File.read(uri.path)
+            begin
+                jmx = File.read(uri.path)
+            rescue Errno::ENOENT
+                print 'file not found.  exiting...'
+                exit(1)
+            end
         elsif uri.scheme == 'http' or uri.scheme == 'https'
-            jmx = Net::HTTP.get(URI("#{namenode}"))
+            begin
+                http = Net::HTTP.new(uri.host, uri.port)
+                http.open_timeout = 5
+
+                if uri.scheme == 'https'
+                    http.use_ssl = true
+                end
+
+                response = http.request(Net::HTTP::Get.new(uri.request_uri))
+
+                jmx = response.body
+            rescue Net::OpenTimeout
+                print 'timeout trying to retrieve JMX data from namenode.' \
+                      'did you use the correct hostname/port?  exiting...'
+                exit(1)
+            end
         end
         stats = JSON.parse(jmx)
 
