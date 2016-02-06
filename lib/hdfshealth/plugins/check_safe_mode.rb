@@ -5,8 +5,13 @@ class CheckSafeMode < HDFSHealth::Plugin
     def run(namenode)
         jmx = LoadNNJMX.jmx(namenode)
 
-        @message = 'a message'
-        @status = 'OK'
+        if jmx['NameNodeInfo']['Safemode'].empty?
+            @status = 'OK'
+            @message = 'NN not in safe mode'
+        else
+            @status = 'CRITICAL'
+            @message = jmx['NameNodeInfo']['Safemode']
+        end
     end
 
 end
