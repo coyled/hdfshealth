@@ -22,6 +22,7 @@ See the existing plugins in `lib/hdfshealth/plugins/`
 
 * copy one of the existing plugins to a new file
 * create a unique class name
+* create a `run` method
 * set `@status` and `@message`
 * create relevant tests in the `spec` dir
 
