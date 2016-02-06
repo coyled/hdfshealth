@@ -10,8 +10,21 @@ module HDFSHealth
                 check = plugin.new
                 check.run(@namenode)
 
-                puts check.status
-                puts check.message
+                if check.status.empty?
+                    status = 'UNKNOWN'
+                else
+                    status = check.status
+                end
+
+                if check.message.empty?
+                    message = 'unknown'
+                else
+                    message = check.message
+                end
+
+                timestamp = Time.now.utc.to_s
+
+                puts "[ #{timestamp} ] #{plugin} status: #{status}  #{message}"
             end
         end
 

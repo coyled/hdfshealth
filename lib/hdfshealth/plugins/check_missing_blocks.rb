@@ -5,8 +5,8 @@ class CheckMissingBlocks < HDFSHealth::Plugin
     def run(namenode)
         jmx = LoadNNJMX.jmx(namenode)
 
-        @message = ''
-        @status = ''
+        @message = 'a message'
+        @status = 'OK'
     end
 
 end
