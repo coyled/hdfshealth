@@ -1,0 +1,6 @@
+languages:
+  Ruby: true
+exclude_paths:
+# codeclimate adds .rubocop.yml automatically then alerts you to
+# errors in it.  ¯\_(ツ)_/¯
+- ".rubocop.yml"
