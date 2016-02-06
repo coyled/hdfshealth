@@ -1,5 +1,6 @@
 class LoadNNJMX < HDFSHealth::Plugin
 
+    require 'uri'
     require 'net/http'
     require 'json'
 
@@ -14,7 +15,12 @@ class LoadNNJMX < HDFSHealth::Plugin
     end
 
     def self.fetch_jmx(namenode)
-        jmx =  Net::HTTP.get(URI("http://#{namenode}/jmx"))
+        uri = URI(namenode)
+        if uri.scheme == 'file'
+            jmx = File.read(uri.path)
+        elsif uri.scheme == 'http' or uri.scheme == 'https'
+            jmx = Net::HTTP.get(URI("#{namenode}"))
+        end
         stats = JSON.parse(jmx)
 
         stats['beans'].each do |data|
