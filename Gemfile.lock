@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     choice (0.2.0)
+    json (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   choice
+  json
 
 BUNDLED WITH
    1.11.2
