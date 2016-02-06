@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
+#
+# hdfshealth
+#
+# run with no options for help
+#
 
 $:.unshift File.join(File.dirname(__FILE__), '../lib')
 

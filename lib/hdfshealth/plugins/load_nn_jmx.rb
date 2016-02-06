@@ -1,3 +1,6 @@
+#
+# load namenode /jmx output for use by other plugins
+#
 class LoadNNJMX < HDFSHealth::Plugin
 
     require 'uri'

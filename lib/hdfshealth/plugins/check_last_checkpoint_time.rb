@@ -1,3 +1,9 @@
+#
+# CheckLastCheckpointTime: see how old the last snapshot is and
+# complain if it's old.  this could indicate a broken secondary
+# namenode (if you have one) or a broken standby namenode in an HA
+# pair (if you have one)
+#
 class CheckLastCheckpointTime < HDFSHealth::Plugin
 
     require_relative 'load_nn_jmx'

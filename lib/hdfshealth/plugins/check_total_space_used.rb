@@ -1,3 +1,7 @@
+#
+# CheckTotalSpaceUsed: look at total % of HDFS space used.  complain
+# if it's high.
+#
 class CheckTotalSpaceUsed < HDFSHealth::Plugin
 
     require_relative 'load_nn_jmx'

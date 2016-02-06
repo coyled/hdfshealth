@@ -6,6 +6,9 @@ module HDFSHealth
         end
 
         def run
+            #
+            # run each of the plugins and output results from each
+            #
             HDFSHealth::Plugin.autorun_plugins.each do |plugin|
                 check = plugin.new
                 check.run(@namenode)

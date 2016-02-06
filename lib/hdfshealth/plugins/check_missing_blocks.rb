@@ -1,3 +1,7 @@
+#
+# CheckMissingBlocks: look for missing blocks and alert if there are
+# any reported missing by the namenode
+#
 class CheckMissingBlocks < HDFSHealth::Plugin
 
     require_relative 'load_nn_jmx'
