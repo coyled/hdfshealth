@@ -18,7 +18,7 @@ assorted HDFS health checks.
 Adding a plugin
 ---------------
 
-See the existing plugins in `lib/hdfshealth/plugins/`
+See the existing plugins in [`lib/hdfshealth/plugins/`](lib/hdfshealth/plugins)
 
 * copy one of the existing plugins to a new file
 * create a unique class name
@@ -33,7 +33,8 @@ Requirements
 * Ruby 2.2.2
   * may work with other versions but this was the only one tested
 * the Bundler gem (`gem install bundler`)
-
+* Hadoop
+  * tested with Cloudera's CDH5.5.1
 
 
 Usage
@@ -50,4 +51,4 @@ Usage
 Improvements
 ------------
 
-See `TODO.md`
+See [`TODO.md`](TODO.md)
