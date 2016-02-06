@@ -5,8 +5,17 @@ class CheckMissingBlocks < HDFSHealth::Plugin
     def run(namenode)
         jmx = LoadNNJMX.jmx(namenode)
 
-        @message = 'a message'
-        @status = 'OK'
+        missing_blocks = jmx['FSNamesystem']['MissingBlocks'].to_i
+        missing_single_replica_blocks = jmx['FSNamesystem']['MissingReplOneBlocks'].to_i
+
+        if missing_blocks > 0 || missing_single_replica_blocks > 0
+            @status = 'CRITICAL'
+            @message = "there are missing blocks.  missing: #{missing_blocks}  missing" \
+                       " from files with single replicas: #{missing_single_replica_blocks}"
+        else
+            @status = 'OK'
+            @message = 'no reported missing blocks'
+        end
     end
 
 end
