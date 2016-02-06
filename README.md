@@ -27,6 +27,11 @@ See the existing plugins in [`lib/hdfshealth/plugins/`](lib/hdfshealth/plugins)
 * create relevant tests in the `spec` dir
 
 
+If you wanted to add another source, e.g. datanode JMX output, you
+could create something along the lines of the `load_nn_jmx.rb` plugin
+and require it where needed.
+
+
 Requirements
 ------------
 
