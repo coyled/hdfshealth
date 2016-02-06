@@ -1,0 +1,696 @@
+{
+  "beans" : [ {
+    "name" : "Hadoop:service=NameNode,name=JvmMetrics",
+    "modelerType" : "JvmMetrics",
+    "tag.Context" : "jvm",
+    "tag.ProcessName" : "NameNode",
+    "tag.SessionId" : null,
+    "tag.Hostname" : "hadoop0",
+    "MemNonHeapUsedM" : 54.13996,
+    "MemNonHeapCommittedM" : 55.625,
+    "MemNonHeapMaxM" : -9.536743E-7,
+    "MemHeapUsedM" : 56.600273,
+    "MemHeapCommittedM" : 114.5,
+    "MemHeapMaxM" : 889.0,
+    "MemMaxM" : 889.0,
+    "GcCount" : 43,
+    "GcTimeMillis" : 376,
+    "GcNumWarnThresholdExceeded" : 0,
+    "GcNumInfoThresholdExceeded" : 0,
+    "GcTotalExtraSleepTime" : 19,
+    "ThreadsNew" : 0,
+    "ThreadsRunnable" : 6,
+    "ThreadsBlocked" : 0,
+    "ThreadsWaiting" : 3,
+    "ThreadsTimedWaiting" : 24,
+    "ThreadsTerminated" : 0,
+    "LogFatal" : 0,
+    "LogError" : 0,
+    "LogWarn" : 470,
+    "LogInfo" : 10789
+  }, {
+  }, {
+    "name" : "Hadoop:service=NameNode,name=StartupProgress",
+    "modelerType" : "StartupProgress",
+    "tag.Hostname" : "hadoop0",
+    "ElapsedTime" : 254366,
+    "PercentComplete" : 1.0,
+    "LoadingFsImageCount" : 0,
+    "LoadingFsImageElapsedTime" : 394,
+    "LoadingFsImageTotal" : 0,
+    "LoadingFsImagePercentComplete" : 1.0,
+    "LoadingEditsCount" : 1,
+    "LoadingEditsElapsedTime" : 9,
+    "LoadingEditsTotal" : 1,
+    "LoadingEditsPercentComplete" : 1.0,
+    "SavingCheckpointCount" : 0,
+    "SavingCheckpointElapsedTime" : 0,
+    "SavingCheckpointTotal" : 0,
+    "SavingCheckpointPercentComplete" : 1.0,
+    "SafeModeCount" : 215,
+    "SafeModeElapsedTime" : 253126,
+    "SafeModeTotal" : 215,
+    "SafeModePercentComplete" : 1.0
+  }, {
+    "name" : "Hadoop:service=NameNode,name=FSNamesystem",
+    "modelerType" : "FSNamesystem",
+    "tag.Context" : "dfs",
+    "tag.HAState" : "active",
+    "tag.Hostname" : "hadoop0",
+    "BlocksTotal" : 215,
+    "MissingBlocks" : 0,
+    "MissingReplOneBlocks" : 0,
+    "ExpiredHeartbeats" : 5,
+    "TransactionsSinceLastCheckpoint" : 42,
+    "TransactionsSinceLastLogRoll" : 41,
+    "LastWrittenTransactionId" : 947,
+    "LastCheckpointTime" : 1454630829000,
+    "UnderReplicatedBlocks" : 0,
+    "CorruptBlocks" : 0,
+    "CapacityTotal" : 94714712064,
+    "CapacityTotalGB" : 88.0,
+    "CapacityUsed" : 57090797568,
+    "CapacityUsedGB" : 53.0,
+    "CapacityRemaining" : 33290305536,
+    "CapacityRemainingGB" : 31.0,
+    "CapacityUsedNonDFS" : 4333608960,
+    "TotalLoad" : 3,
+    "SnapshottableDirectories" : 0,
+    "Snapshots" : 0,
+    "FilesTotal" : 22,
+    "PendingReplicationBlocks" : 0,
+    "ScheduledReplicationBlocks" : 0,
+    "PendingDeletionBlocks" : 0,
+    "ExcessBlocks" : 0,
+    "PostponedMisreplicatedBlocks" : 0,
+    "PendingDataNodeMessageCount" : 0,
+    "MillisSinceLastLoadedEdits" : 0,
+    "BlockCapacity" : 2097152,
+    "StaleDataNodes" : 0,
+    "TotalFiles" : 22
+  }, {
+    "name" : "Hadoop:service=NameNode,name=RpcDetailedActivityForPort8020",
+    "modelerType" : "RpcDetailedActivityForPort8020",
+    "tag.port" : "8020",
+    "tag.Context" : "rpcdetailed",
+    "tag.Hostname" : "hadoop0",
+    "GetFileInfoNumOps" : 12005,
+    "GetFileInfoAvgTime" : 0.12500000000000003,
+    "SafeModeExceptionNumOps" : 26,
+    "SafeModeExceptionAvgTime" : 0.5,
+    "SetSafeModeNumOps" : 51,
+    "SetSafeModeAvgTime" : 26.0,
+    "VersionRequestNumOps" : 12,
+    "VersionRequestAvgTime" : 4.583333333333333,
+    "RegisterDatanodeNumOps" : 12,
+    "RegisterDatanodeAvgTime" : 4.166666666666666,
+    "SendHeartbeatNumOps" : 142912,
+    "SendHeartbeatAvgTime" : 0.027355623100303955,
+    "BlockReportNumOps" : 32,
+    "BlockReportAvgTime" : 1.0,
+    "GetListingNumOps" : 11976,
+    "GetListingAvgTime" : 0.34375,
+    "GetBlockLocationsNumOps" : 15699,
+    "GetBlockLocationsAvgTime" : 0.15625000000000006,
+    "GetServerDefaultsNumOps" : 31,
+    "GetServerDefaultsAvgTime" : 0.10000000000000002,
+    "BlockReceivedAndDeletedNumOps" : 251,
+    "BlockReceivedAndDeletedAvgTime" : 0.2500000000000002,
+    "AccessControlExceptionNumOps" : 1,
+    "AccessControlExceptionAvgTime" : 0.0
+  }, {
+    "name" : "Hadoop:service=NameNode,name=MetricsSystem,sub=Stats",
+    "modelerType" : "MetricsSystem,sub=Stats",
+    "tag.Context" : "metricssystem",
+    "tag.Hostname" : "hadoop0",
+    "NumActiveSources" : 8,
+    "NumAllSources" : 8,
+    "NumActiveSinks" : 0,
+    "NumAllSinks" : 0,
+    "SnapshotNumOps" : 0,
+    "SnapshotAvgTime" : 0.0,
+    "PublishNumOps" : 0,
+    "PublishAvgTime" : 0.0,
+    "DroppedPubAll" : 0
+  }, {
+    "name" : "Hadoop:service=NameNode,name=MetricsSystem,sub=Control",
+    "modelerType" : "org.apache.hadoop.metrics2.impl.MetricsSystemImpl"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=Metaspace",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 36175872,
+      "init" : 0,
+      "max" : -1,
+      "used" : 35147408
+    },
+    "PeakUsage" : {
+      "committed" : 36175872,
+      "init" : 0,
+      "max" : -1,
+      "used" : 35147408
+    },
+    "MemoryManagerNames" : [ "Metaspace Manager" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsage" : null,
+    "CollectionUsageThresholdSupported" : false,
+    "Name" : "Metaspace",
+    "Type" : "NON_HEAP",
+    "ObjectName" : "java.lang:type=MemoryPool,name=Metaspace"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Old Gen",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 66584576,
+      "init" : 82837504,
+      "max" : 699400192,
+      "used" : 25216904
+    },
+    "PeakUsage" : {
+      "committed" : 82837504,
+      "init" : 82837504,
+      "max" : 699400192,
+      "used" : 25216904
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 66584576,
+      "init" : 82837504,
+      "max" : 699400192,
+      "used" : 21536616
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "Name" : "PS Old Gen",
+    "Type" : "HEAP",
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Old Gen"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=NameNodeActivity",
+    "modelerType" : "NameNodeActivity",
+    "tag.ProcessName" : "NameNode",
+    "tag.SessionId" : null,
+    "tag.Context" : "dfs",
+    "tag.Hostname" : "hadoop0",
+    "CreateFileOps" : 0,
+    "FilesCreated" : 0,
+    "FilesAppended" : 0,
+    "GetBlockLocations" : 15699,
+    "FilesRenamed" : 0,
+    "GetListingOps" : 11976,
+    "DeleteFileOps" : 0,
+    "FilesDeleted" : 0,
+    "FileInfoOps" : 12005,
+    "AddBlockOps" : 0,
+    "GetAdditionalDatanodeOps" : 0,
+    "CreateSymlinkOps" : 0,
+    "GetLinkTargetOps" : 0,
+    "FilesInGetListingOps" : 11976,
+    "AllowSnapshotOps" : 0,
+    "DisallowSnapshotOps" : 0,
+    "CreateSnapshotOps" : 0,
+    "DeleteSnapshotOps" : 0,
+    "RenameSnapshotOps" : 0,
+    "ListSnapshottableDirOps" : 0,
+    "SnapshotDiffReportOps" : 0,
+    "BlockReceivedAndDeletedOps" : 251,
+    "StorageBlockReportOps" : 32,
+    "TransactionsNumOps" : 41,
+    "TransactionsAvgTime" : 0.20000000000000004,
+    "SyncsNumOps" : 3,
+    "SyncsAvgTime" : 25.0,
+    "TransactionsBatchedInSync" : 0,
+    "BlockReportNumOps" : 32,
+    "BlockReportAvgTime" : 1.0,
+    "CacheReportNumOps" : 0,
+    "CacheReportAvgTime" : 0.0,
+    "SafeModeTime" : 104188164,
+    "FsImageLoadTime" : 948,
+    "GetEditNumOps" : 0,
+    "GetEditAvgTime" : 0.0,
+    "GetImageNumOps" : 0,
+    "GetImageAvgTime" : 0.0,
+    "PutImageNumOps" : 0,
+    "PutImageAvgTime" : 0.0,
+    "TotalFileOps" : 39680
+  }, {
+    "name" : "java.lang:type=GarbageCollector,name=PS Scavenge",
+    "modelerType" : "sun.management.GarbageCollectorImpl",
+    "LastGcInfo" : {
+      "GcThreadCount" : 2,
+      "duration" : 4,
+      "endTime" : 142513490,
+      "id" : 42,
+      "memoryUsageAfterGc" : [ {
+        "key" : "Compressed Class Space",
+        "value" : {
+          "committed" : 4194304,
+          "init" : 0,
+          "max" : 1073741824,
+          "used" : 3887688
+        }
+      }, {
+        "key" : "PS Survivor Space",
+        "value" : {
+          "committed" : 524288,
+          "init" : 4718592,
+          "max" : 524288,
+          "used" : 450608
+        }
+      }, {
+        "key" : "PS Old Gen",
+        "value" : {
+          "committed" : 66584576,
+          "init" : 82837504,
+          "max" : 699400192,
+          "used" : 25216904
+        }
+      }, {
+        "key" : "Metaspace",
+        "value" : {
+          "committed" : 36175872,
+          "init" : 0,
+          "max" : -1,
+          "used" : 35053968
+        }
+      }, {
+        "key" : "PS Eden Space",
+        "value" : {
+          "committed" : 52953088,
+          "init" : 31457280,
+          "max" : 344457216,
+          "used" : 0
+        }
+      }, {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 17432576,
+          "init" : 2555904,
+          "max" : 251658240,
+          "used" : 17259264
+        }
+      } ],
+      "memoryUsageBeforeGc" : [ {
+        "key" : "Compressed Class Space",
+        "value" : {
+          "committed" : 4194304,
+          "init" : 0,
+          "max" : 1073741824,
+          "used" : 3887688
+        }
+      }, {
+        "key" : "PS Survivor Space",
+        "value" : {
+          "committed" : 4194304,
+          "init" : 4718592,
+          "max" : 4194304,
+          "used" : 98304
+        }
+      }, {
+        "key" : "PS Old Gen",
+        "value" : {
+          "committed" : 66584576,
+          "init" : 82837504,
+          "max" : 699400192,
+          "used" : 25200520
+        }
+      }, {
+        "key" : "Metaspace",
+        "value" : {
+          "committed" : 36175872,
+          "init" : 0,
+          "max" : -1,
+          "used" : 35053968
+        }
+      }, {
+        "key" : "PS Eden Space",
+        "value" : {
+          "committed" : 54525952,
+          "init" : 31457280,
+          "max" : 340787200,
+          "used" : 54525952
+        }
+      }, {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 17432576,
+          "init" : 2555904,
+          "max" : 251658240,
+          "used" : 17259264
+        }
+      } ],
+      "startTime" : 142513486
+    },
+    "CollectionCount" : 42,
+    "CollectionTime" : 300,
+    "Valid" : true,
+    "MemoryPoolNames" : [ "PS Eden Space", "PS Survivor Space" ],
+    "Name" : "PS Scavenge",
+    "ObjectName" : "java.lang:type=GarbageCollector,name=PS Scavenge"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=NameNodeStatus",
+    "modelerType" : "org.apache.hadoop.hdfs.server.namenode.NameNode",
+    "SecurityEnabled" : false,
+    "NNRole" : "NameNode",
+    "HostAndPort" : "hadoop0:8020",
+    "LastHATransitionTime" : 0,
+    "State" : "active"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Eden Space",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 52953088,
+      "init" : 31457280,
+      "max" : 344457216,
+      "used" : 34064312
+    },
+    "PeakUsage" : {
+      "committed" : 144703488,
+      "init" : 31457280,
+      "max" : 344457216,
+      "used" : 144703488
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep", "PS Scavenge" ],
+    "UsageThresholdSupported" : false,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 52953088,
+      "init" : 31457280,
+      "max" : 344457216,
+      "used" : 0
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "Name" : "PS Eden Space",
+    "Type" : "HEAP",
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Eden Space"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=NameNodeInfo",
+    "modelerType" : "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+    "Total" : 94714712064,
+    "UpgradeFinalized" : true,
+    "ClusterId" : "CID-4f0c4aa8-26e3-4be6-a53e-ae5898c8d361",
+    "BlockPoolId" : "BP-189894230-10.240.0.2-1452491916833",
+    "Version" : "2.6.0-cdh5.5.1, re1581abbb6ab62b0a41b7ce6141d7280bf0c53da ",
+    "TotalBlocks" : 215,
+    "Used" : 57090797568,
+    "Free" : 33290305536,
+    "Safemode" : "Safe mode is ON. It was turned on manually. Use \"hdfs dfsadmin -safemode leave\" to turn safe mode off.",
+    "NonDfsUsedSpace" : 4333608960,
+    "PercentUsed" : 60.27659,
+    "BlockPoolUsedSpace" : 57090797568,
+    "PercentBlockPoolUsed" : 60.27659,
+    "PercentRemaining" : 35.14798,
+    "CacheCapacity" : 0,
+    "CacheUsed" : 0,
+    "TotalFiles" : 22,
+    "NumberOfMissingBlocks" : 0,
+    "NumberOfMissingBlocksWithReplicationFactorOne" : 0,
+    "LiveNodes" : "{\"hadoop2\":{\"infoAddr\":\"10.240.0.4:50075\",\"infoSecureAddr\":\"10.240.0.4:0\",\"xferaddr\":\"10.240.0.4:50010\",\"lastContact\":0,\"usedSpace\":14518489088,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1444536320,\"capacity\":31571570688,\"numBlocks\":112,\"version\":\"2.6.0-cdh5.5.1\",\"used\":14518489088,\"remaining\":15608545280,\"blockScheduled\":0,\"blockPoolUsed\":14518489088,\"blockPoolUsedPercent\":45.98596,\"volfails\":0},\"hadoop1\":{\"infoAddr\":\"10.240.0.3:50075\",\"infoSecureAddr\":\"10.240.0.3:0\",\"xferaddr\":\"10.240.0.3:50010\",\"lastContact\":0,\"usedSpace\":19324710912,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1444536320,\"capacity\":31571570688,\"numBlocks\":148,\"version\":\"2.6.0-cdh5.5.1\",\"used\":19324710912,\"remaining\":10802323456,\"blockScheduled\":0,\"blockPoolUsed\":19324710912,\"blockPoolUsedPercent\":61.209213,\"volfails\":0},\"hadoop3\":{\"infoAddr\":\"10.240.0.5:50075\",\"infoSecureAddr\":\"10.240.0.5:0\",\"xferaddr\":\"10.240.0.5:50010\",\"lastContact\":2,\"usedSpace\":23247597568,\"adminState\":\"In Service\",\"nonDfsUsedSpace\":1444536320,\"capacity\":31571570688,\"numBlocks\":177,\"version\":\"2.6.0-cdh5.5.1\",\"used\":23247597568,\"remaining\":6879436800,\"blockScheduled\":0,\"blockPoolUsed\":23247597568,\"blockPoolUsedPercent\":73.6346,\"volfails\":0}}",
+    "SoftwareVersion" : "2.6.0-cdh5.5.1",
+    "DeadNodes" : "{\"hadoop4\":{\"lastContact\":1913,\"decommissioned\":false,\"xferaddr\":\"10.240.0.6:50010\"}}",
+    "DecomNodes" : "{}",
+    "NameDirStatuses" : "{\"active\":{\"/srv/hdfs/name\":\"IMAGE_AND_EDITS\"},\"failed\":{}}",
+    "NodeUsage" : "{\"nodeUsage\":{\"min\":\"45.99%\",\"median\":\"61.21%\",\"max\":\"73.63%\",\"stdDev\":\"11.31%\"}}",
+    "NameJournalStatus" : "[{\"manager\":\"FileJournalManager(root=/srv/hdfs/name)\",\"stream\":\"EditLogFileOutputStream(/srv/hdfs/name/current/edits_inprogress_0000000000000000907)\",\"disabled\":\"false\",\"required\":\"false\"}]",
+    "JournalTransactionInfo" : "{\"MostRecentCheckpointTxId\":\"905\",\"LastAppliedOrWrittenTxId\":\"947\"}",
+    "NNStarted" : "Fri Feb 05 00:30:11 UTC 2016",
+    "CompileInfo" : "2015-12-02T18:48Z by jenkins from Unknown",
+    "CorruptFiles" : "[]",
+    "DistinctVersionCount" : 1,
+    "DistinctVersions" : [ {
+      "key" : "2.6.0-cdh5.5.1",
+      "value" : 3
+    } ],
+    "RollingUpgradeStatus" : null,
+    "Threads" : 33
+  }, {
+    "name" : "Hadoop:service=NameNode,name=SnapshotInfo",
+    "modelerType" : "org.apache.hadoop.hdfs.server.namenode.snapshot.SnapshotManager",
+    "SnapshottableDirectories" : [ ],
+    "Snapshots" : [ ]
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=Compressed Class Space",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 4194304,
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 3888824
+    },
+    "PeakUsage" : {
+      "committed" : 4194304,
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 3888824
+    },
+    "MemoryManagerNames" : [ "Metaspace Manager" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsage" : null,
+    "CollectionUsageThresholdSupported" : false,
+    "Name" : "Compressed Class Space",
+    "Type" : "NON_HEAP",
+    "ObjectName" : "java.lang:type=MemoryPool,name=Compressed Class Space"
+  }, {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "ObjectPendingFinalizationCount" : 0,
+    "HeapMemoryUsage" : {
+      "committed" : 120061952,
+      "init" : 123731968,
+      "max" : 932184064,
+      "used" : 59810272
+    },
+    "NonHeapMemoryUsage" : {
+      "committed" : 58327040,
+      "init" : 2555904,
+      "max" : -1,
+      "used" : 56769864
+    },
+    "Verbose" : false,
+    "ObjectName" : "java.lang:type=Memory"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=FSNamesystemState",
+    "modelerType" : "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+    "BlocksTotal" : 215,
+    "UnderReplicatedBlocks" : 0,
+    "CapacityTotal" : 94714712064,
+    "CapacityUsed" : 57090797568,
+    "CapacityRemaining" : 33290305536,
+    "TotalLoad" : 3,
+    "SnapshotStats" : "{\"SnapshottableDirectories\":0,\"Snapshots\":0}",
+    "MaxObjects" : 0,
+    "FilesTotal" : 22,
+    "PendingReplicationBlocks" : 0,
+    "ScheduledReplicationBlocks" : 0,
+    "PendingDeletionBlocks" : 0,
+    "BlockDeletionStartTime" : 1454632211505,
+    "FSState" : "safeMode",
+    "NumLiveDataNodes" : 3,
+    "NumDeadDataNodes" : 1,
+    "NumDecomLiveDataNodes" : 0,
+    "NumDecomDeadDataNodes" : 0,
+    "VolumeFailuresTotal" : 0,
+    "EstimatedCapacityLostTotal" : 0,
+    "NumDecommissioningDataNodes" : 0,
+    "NumStaleDataNodes" : 0,
+    "NumStaleStorages" : 0,
+    "TopUserOpCounts" : "{\"timestamp\":\"2016-02-06T16:22:17+0000\",\"windows\":[{\"windowLenMs\":60000,\"ops\":[{\"opType\":\"getfileinfo\",\"topUsers\":[{\"user\":\"spark\",\"count\":6}],\"totalCount\":6},{\"opType\":\"listStatus\",\"topUsers\":[{\"user\":\"spark\",\"count\":6}],\"totalCount\":6},{\"opType\":\"*\",\"topUsers\":[{\"user\":\"spark\",\"count\":18}],\"totalCount\":18},{\"opType\":\"open\",\"topUsers\":[{\"user\":\"spark\",\"count\":6}],\"totalCount\":6}]},{\"windowLenMs\":300000,\"ops\":[{\"opType\":\"getfileinfo\",\"topUsers\":[{\"user\":\"spark\",\"count\":26}],\"totalCount\":26},{\"opType\":\"listStatus\",\"topUsers\":[{\"user\":\"spark\",\"count\":26}],\"totalCount\":26},{\"opType\":\"*\",\"topUsers\":[{\"user\":\"spark\",\"count\":72}],\"totalCount\":72},{\"opType\":\"open\",\"topUsers\":[{\"user\":\"spark\",\"count\":24}],\"totalCount\":24}]},{\"windowLenMs\":1500000,\"ops\":[{\"opType\":\"getfileinfo\",\"topUsers\":[{\"user\":\"spark\",\"count\":74}],\"totalCount\":74},{\"opType\":\"listStatus\",\"topUsers\":[{\"user\":\"spark\",\"count\":74}],\"totalCount\":74},{\"opType\":\"*\",\"topUsers\":[{\"user\":\"spark\",\"count\":189}],\"totalCount\":189},{\"opType\":\"open\",\"topUsers\":[{\"user\":\"spark\",\"count\":63}],\"totalCount\":63}]}]}"
+  }, {
+    "name" : "java.nio:type=BufferPool,name=mapped",
+    "modelerType" : "sun.management.ManagementFactoryHelper$1",
+    "TotalCapacity" : 23292,
+    "MemoryUsed" : 23292,
+    "Count" : 3,
+    "Name" : "mapped",
+    "ObjectName" : "java.nio:type=BufferPool,name=mapped"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=RetryCache.NameNodeRetryCache",
+    "modelerType" : "RetryCache.NameNodeRetryCache",
+    "tag.Context" : "rpc",
+    "tag.Hostname" : "hadoop0",
+    "CacheHit" : 0,
+    "CacheCleared" : 0,
+    "CacheUpdated" : 0
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Survivor Space",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 524288,
+      "init" : 4718592,
+      "max" : 524288,
+      "used" : 450608
+    },
+    "PeakUsage" : {
+      "committed" : 15728640,
+      "init" : 4718592,
+      "max" : 15728640,
+      "used" : 8960368
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep", "PS Scavenge" ],
+    "UsageThresholdSupported" : false,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 524288,
+      "init" : 4718592,
+      "max" : 524288,
+      "used" : 450608
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "Name" : "PS Survivor Space",
+    "Type" : "HEAP",
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Survivor Space"
+  }, {
+    "name" : "com.sun.management:type=DiagnosticCommand",
+    "modelerType" : "sun.management.DiagnosticCommandImpl"
+  }, {
+    "name" : "Hadoop:service=NameNode,name=RpcActivityForPort8020",
+    "modelerType" : "RpcActivityForPort8020",
+    "tag.port" : "8020",
+    "tag.Context" : "rpc",
+    "tag.Hostname" : "hadoop0",
+    "ReceivedBytes" : 69065591,
+    "SentBytes" : 25159478,
+    "RpcQueueTimeNumOps" : 183008,
+    "RpcQueueTimeAvgTime" : 0.09389671361502344,
+    "RpcProcessingTimeNumOps" : 183008,
+    "RpcProcessingTimeAvgTime" : 0.12910798122065736,
+    "RpcAuthenticationFailures" : 0,
+    "RpcAuthenticationSuccesses" : 0,
+    "RpcAuthorizationFailures" : 0,
+    "RpcAuthorizationSuccesses" : 12709,
+    "RpcClientBackoff" : 0,
+    "NumOpenConnections" : 4,
+    "CallQueueLength" : 0
+  }, {
+    "name" : "Hadoop:service=NameNode,name=UgiMetrics",
+    "modelerType" : "UgiMetrics",
+    "tag.Context" : "ugi",
+    "tag.Hostname" : "hadoop0",
+    "LoginSuccessNumOps" : 0,
+    "LoginSuccessAvgTime" : 0.0,
+    "LoginFailureNumOps" : 0,
+    "LoginFailureAvgTime" : 0.0,
+    "GetGroupsNumOps" : 505,
+    "GetGroupsAvgTime" : 0.0
+  }, {
+    "name" : "com.sun.management:type=HotSpotDiagnostic",
+    "modelerType" : "sun.management.HotSpotDiagnostic",
+    "DiagnosticOptions" : [ {
+      "name" : "HeapDumpBeforeFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpAfterFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpOnOutOfMemoryError",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpPath",
+      "origin" : "DEFAULT",
+      "value" : "",
+      "writeable" : true
+    }, {
+      "name" : "CMSAbortablePrecleanWaitMillis",
+      "origin" : "DEFAULT",
+      "value" : "100",
+      "writeable" : true
+    }, {
+      "name" : "CMSWaitDuration",
+      "origin" : "DEFAULT",
+      "value" : "2000",
+      "writeable" : true
+    }, {
+      "name" : "CMSTriggerInterval",
+      "origin" : "DEFAULT",
+      "value" : "-1",
+      "writeable" : true
+    }, {
+      "name" : "PrintGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCDetails",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCDateStamps",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCTimeStamps",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCID",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogramBeforeFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogramAfterFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogram",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "MinHeapFreeRatio",
+      "origin" : "DEFAULT",
+      "value" : "0",
+      "writeable" : true
+    }, {
+      "name" : "MaxHeapFreeRatio",
+      "origin" : "DEFAULT",
+      "value" : "100",
+      "writeable" : true
+    }, {
+      "name" : "PrintConcurrentLocks",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "UnlockCommercialFeatures",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    } ],
+    "ObjectName" : "com.sun.management:type=HotSpotDiagnostic"
+  } ]
+}
