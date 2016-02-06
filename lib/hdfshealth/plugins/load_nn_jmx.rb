@@ -23,11 +23,13 @@ class LoadNNJMX < HDFSHealth::Plugin
     end
 
     def self.parse_jmx(namenode, data)
+        @jmx[namenode] ||= {}
 
         if data['name'] == 'Hadoop:service=NameNode,name=FSNamesystem'
-            @jmx[namenode] = { 'FSNamesystem' => data }
+            @jmx[namenode]['FSNamesystem'] ||= data
+        elsif data['name'] == 'Hadoop:service=NameNode,name=NameNodeInfo'
+            @jmx[namenode]['NameNodeInfo'] ||= data
         end
-
     end
 
 end
