@@ -21,7 +21,7 @@ class CheckTotalSpaceUsed < HDFSHealth::Plugin
             @status = 'CRITICAL'
         end
 
-        @message = "#{'%.2f' % (pct_space_used * 100)}% of total space used (#{total_space_used} of #{total_space})"
+        @message = "#{'%.2f' % (pct_space_used * 100)}% of total space used (#{total_space_used} of #{total_space} bytes)"
     end
 
 end
