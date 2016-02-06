@@ -57,6 +57,29 @@ From the repo's top-level directory:
     $ rspec
 ```
 
+Sample output:
+
+```
+    $rspec
+
+    CheckMissingBlocks
+      Verifies there are no missing blocks
+      Verifies there are missing blocks
+
+    CheckSafeMode
+      Verifies HDFS safe mode is off
+      Verifies HDFS safe mode is on
+
+    CheckTotalSpaceUsed
+      Verifies HDFS is using less than 60% of total space
+      Verifies HDFS is using more than 70% of total space
+
+    Finished in 0.0071 seconds (files took 0.2247 seconds to load)
+    6 examples, 0 failures
+
+    $
+```
+
 
 Adding a plugin
 ---------------
