@@ -13,15 +13,13 @@ module HDFSHealth
                 check = plugin.new
                 check.run(@namenode)
 
-                # FIX
-                if check.status.empty?
+                if check.status.nil?
                     status = 'UNKNOWN'
                 else
                     status = check.status
                 end
 
-                # FIX
-                if check.message.empty?
+                if check.message.nil?
                     message = 'unknown'
                 else
                     message = check.message
