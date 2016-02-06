@@ -31,10 +31,10 @@ Sample output
 
 ```
 % bin/hdfshealth --namenode http://10.1.1.10:50070/jmx
-[ 2016-02-06 18:24:30 UTC ] CheckLastCheckpointTime status: CRITICAL last checkpoint is at least 42 hours old
+[ 2016-02-06 18:24:30 UTC ] CheckLastCheckpointTime status: CRITICAL  last checkpoint is at least 42 hours old
 [ 2016-02-06 18:24:30 UTC ] CheckMissingBlocks status: OK  no reported missing blocks
 [ 2016-02-06 18:24:30 UTC ] CheckSafeMode status: OK  NN not in safe mode
-[ 2016-02-06 18:24:30 UTC ] CheckTotalSpaceUsed status: CRITICAL 89.92% of total space used (56776560640 of 63143141376)
+[ 2016-02-06 18:24:30 UTC ] CheckTotalSpaceUsed status: CRITICAL  89.92% of total space used (56776560640 of 63143141376 bytes)
 ```
 
 
