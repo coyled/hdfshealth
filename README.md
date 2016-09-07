@@ -41,8 +41,9 @@ Sample output
 Requirements
 ------------
 
-* Ruby 2.2.2
-  * may work with other versions but this was the only one tested
+* Ruby
+  * tested with MRI 2.2.2 and 2.3.1
+  * may work with other versions but these are the only ones tested
 * the Bundler gem (`gem install bundler`)
 * Hadoop
   * tested with Cloudera's CDH5.5.1
