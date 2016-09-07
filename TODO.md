@@ -1,7 +1,6 @@
 TODO
 ====
 
-* add machine-readable output option
 * more test coverage
 * clean up --namenode CLI option
     * constuct full URI if some parts are left out, e.g. support:

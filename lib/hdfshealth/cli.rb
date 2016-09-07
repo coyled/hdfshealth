@@ -3,6 +3,7 @@ module HDFSHealth
 
         def initialize(params = {})
             @namenode = params[:namenode]
+            @output_format = params[:output_format]
         end
 
         def run
@@ -27,7 +28,21 @@ module HDFSHealth
 
                 timestamp = Time.now.utc.to_s
 
-                puts "[ #{timestamp} ] #{plugin} status: #{status}  #{message}"
+                if @output_format == 'json'
+                    # we're treating each line as a separate json
+                    # object in case we want to send to some
+                    # log/log aggregation service...
+                    output = {
+                        'timestamp' => timestamp,
+                        'plugin'    => plugin,
+                        'status'    => status,
+                        'message'   => message
+                    }.to_json
+                elsif @output_format == 'human'
+                    output = "[ #{timestamp} ] #{plugin} status: #{status}  #{message}"
+                end
+
+                puts output
             end
         end
 

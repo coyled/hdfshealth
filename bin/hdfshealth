@@ -16,6 +16,14 @@ Choice.options do
         desc 'Namenode to check'
     end
 
+    option :output_format, :required => false do
+        long '--output-format={human,json}'
+        short '-o'
+        desc 'Output format: human (default) or json'
+        valid ['human', 'json']
+        default 'human'
+    end
+
     option :version do
         long '--version'
         desc 'Show version'
