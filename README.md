@@ -5,7 +5,7 @@ hdfshealth
 
 [![Build Status](https://travis-ci.org/coyled/hdfshealth.svg?branch=master)](https://travis-ci.org/coyled/hdfshealth)
 
-[![Code Climate](https://codeclimate.com/repos/56b557a42ffae3007100494f/badges/7868eb018fd5ecaec77f/gpa.svg)](https://codeclimate.com/repos/56b557a42ffae3007100494f/feed)
+[![Code Climate](https://codeclimate.com/github/coyled/hdfshealth/badges/gpa.svg)](https://codeclimate.com/github/coyled/hdfshealth)
 
 
 Overview
